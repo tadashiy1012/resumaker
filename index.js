@@ -47,7 +47,7 @@ module.exports = (function() {
   function compile(htmlStr, outPath = 'tmp') {
     const npmRun = require('npm-run');
     return new Promise((done, fail) => {
-      const htmlPath = path.join(___dirname, 'tmp/resume.html');
+      const htmlPath = path.join(__dirname, 'tmp/resume.html');
       const pdfPath = path.join(outPath, 'resume.pdf');
       fs.writeFile(htmlPath, htmlStr, (err) => {
         if (err) {
