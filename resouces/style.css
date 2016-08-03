@@ -1,0 +1,150 @@
+body {
+  font-family: ‘Helvetica Neue’, ‘Hiragino Kaku Gothic ProN’, ‘游ゴシック Medium’, ‘メイリオ’, meiryo, sans-serif
+}
+#t1, #t2 {
+  border-spacing: 0px;
+  width: 800px;
+}
+#t1 {
+  height: 448px;
+}
+#t1 td {
+  border-bottom: solid 1px black;
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+}
+#t1 .leader {
+  border-right: none;
+}
+#t1 .follow {
+  border-left: none;
+  padding-left: 16px;
+}
+#t1 .label {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 8px;
+  font-size: 13px;
+}
+#t1 .btmDash {
+  border-bottom: dashed 1px black;
+}
+#t1 .topPeriphery td, #t2 .topPeriphery td {
+  border-top: solid 2px black;
+}
+#t1 .btmPeriphery td {
+  border-bottom: solid 2px black
+}
+#t1 .photo {
+  height:100%;
+  margin:18px;
+  text-align:center;
+  border:none;
+  border-bottom:solid 2px black;
+  width:240px;
+}
+#t1 .photo > .photoIn {
+  width: 100%;
+  text-align: center;
+}
+#t1 .photo > .photoIn > img {
+  height:180px;
+}
+#t1 .t1Inner table {
+  border-spacing: 0px;
+  border: none;
+  width: 100px;
+}
+#t1 .t1Inner td {
+  border: none;
+}
+#t2 td {
+  border-bottom: solid 1px black;
+  border-left: solid 1px black;
+  height: 29px;
+}
+#t2 .header {
+  text-align: center;
+  font-size: 13px;
+}
+#t2 .leader {
+  text-align: center;
+  border-left: solid 2px black;
+}
+#t2 .followA {
+  text-align: center;
+  border-left: dashed 1px black;
+}
+#t2 .followB {
+  border-right: solid 2px black;
+  padding-left: 16px;
+}
+#t2 .btmPeriphery td {
+  border-bottom: solid 2px black
+}
+#t3, #t4, #t5, #t6, #t7 {
+  border-spacing: 0px;
+  width: 800px;
+}
+#t3 td {
+  border-bottom: solid 1px black;
+  border-left: solid 1px black;
+  height: 29px;
+}
+#t3 .header {
+  text-align: center;
+  font-size: 13px;
+}
+#t3 .leader {
+  text-align: center;
+  border-left: solid 2px black;
+}
+#t3 .followA {
+  text-align: center;
+  border-left: dashed 1px black;
+}
+#t3 .followB {
+  border-right: solid 2px black;
+  padding-left: 16px;
+}
+#t3 .topPeriphery td {
+  border-top: solid 2px black;
+}
+#t3 .btmPeriphery td {
+  border-bottom: solid 2px black
+}
+#t4 td, #t5 td, #t7 td {
+  border: solid 2px black;
+  padding-left: 8px;
+  height: 29px;
+}
+#t4 .header, #t5 .header, #t7 .header {
+  border-bottom: none;
+  font-size: 13px;
+}
+#t4 .body, #t5 .body, #t7 .body {
+  border-top: none;
+  height: 200px;
+  vertical-align: top;
+}
+#t6 td {
+  border: solid 2px black;
+  padding-left: 8px;
+  height: 29px;
+}
+#t6 .header {
+  border-bottom: none;
+  font-size: 13px;
+}
+#t6 .body {
+  border-top: none;
+}
+#t6 .follow {
+  border-left: none;
+}
+.break {
+  page-break-after: always;
+}

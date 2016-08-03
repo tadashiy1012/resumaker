@@ -1,0 +1,45 @@
+table#t2.break
+  tr.topPeriphery.header
+    td.leader(style="width:80px;"): span 年
+    td.followA(style="width:60px;"): span 月
+    td.followB: span 学歴・職歴
+  tr
+    td.leader: span 
+    td.followA: span 
+    td.followB(style="text-align:center;"): span 学歴 
+  - var n = 0;
+  while n < itemsA1.length
+    - var item = itemsA1[n];
+    - n++;
+    tr
+      td.leader: span= item.year 
+      td.followA: span= item.month
+      td.followB: span= item.text
+  tr
+    td.leader: span 
+    td.followA: span 
+    td.followB(style="text-align:center;"): span 職歴
+  - n = 0;
+  while n < itemsA2.length
+    - var item = itemsA2[n];
+    - n++;
+    tr
+      td.leader: span= item.year 
+      td.followA: span= item.month
+      td.followB: span= item.text
+  tr
+    td.leader: span 
+    td.followA: span 
+    td.followB(style="text-align:right; padding-right:16px;"): span 以上
+  - var rem = 16 - (itemsA1.length + itemsA2.length);
+  - n = 0;
+  while n < rem
+    tr
+      td.leader: span
+      td.followA: span 
+      td.followB: span 
+    - n++;
+  tr.btmPeriphery
+    td.leader: span 
+    td.followA: span
+    td.followB: span

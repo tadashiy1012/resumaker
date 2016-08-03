@@ -1,0 +1,21 @@
+table#t3
+  tr.topPeriphery.header
+    td.leader(style="width:80px;"): span 取得年
+    td.followA(style="width:60px;"): span 月
+    td.followB: span 免許・資格
+  - var n = 0;
+  while n < 7
+    - var item = itemsB[n] || {year:'',month:'',text:''};
+    - n++;
+    case n
+      when 7
+        tr.btmPeriphery
+          td.leader: span= item.year
+          td.followA: span= item.month
+          td.followB: span= item.text
+      default
+        tr
+          td.leader: span= item.year
+          td.followA: span= item.month
+          td.followB: span= item.text
+  

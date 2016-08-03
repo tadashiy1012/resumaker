@@ -1,0 +1,101 @@
+table#t1
+  tr
+    td.leader(colspan="3" style="border:none;")
+      table.t1Inner: tr
+        td: h1(style="margin:0;") 履 歴 書
+        td(style="text-align:right;"): span= date
+    td.photo(rowspan="5")
+      div.photoIn: img(src=photo)
+  tr.topPeriphery
+    td.leader.label.btmDash
+      span ふ
+      span り
+      span が
+      span な
+    td.leader.follow.btmDash(style="width:500px;")
+      span= nameKana
+    td.label.btmDash(style="border-left:solid 1px;")
+      span 性
+      span 別
+  tr
+    td.leader.label(style="border-bottom:none;")
+      span 氏
+      span 名
+    td.follow(rowspan="2" style="border-right:none;")
+      span(style="font-size:28px;")= name
+    td(rowspan="2" style="text-align:center;border-left:solid 1px;")
+      span= sex
+  tr: td.leader
+  tr
+    td.leader.label
+      span 生
+      span 年
+      span 月
+      span 日
+    td.follow(colspan="2")
+      span= birth
+      span 生（満
+      span= age
+      span 歳）
+  tr
+    td.leader.label.btmDash
+      span ふ
+      span り
+      span が
+      span な
+    td.follow.btmDash(colspan="3")
+      span= addressKana
+  tr
+    td.leader.label(style="border-bottom:none;")
+      span 現
+      span 住
+      span 所
+    td.follow(colspan="3" style="border-bottom:none")
+      span(style="padding-right:8px;") 〒
+      span= zipcode
+  tr
+    td.leader
+    td.follow(colspan="3")
+      span(style="font-size:22px;padding-bottom:8px;")= address
+  tr
+    td.leader.label
+      span T
+      span E
+      span L
+    td.follow(colspan="3")
+      span= tel
+  tr
+    td.leader.label
+      span E
+      span -
+      span m
+      span a
+      span i
+      span l
+    td.follow(colspan="3")
+      span= mail
+  tr
+    td.leader.label.btmDash
+      span ふ
+      span り
+      span が
+      span な
+    td.follow.btmDash(colspan="3")
+      span= contactKana
+  tr
+    td.leader.label(style="border-bottom:none;")
+      span 連
+      span 絡
+      span 先
+    td.follow(colspan="3" style="border-bottom:none;")
+      table.t1Inner: tr
+        td(style="width:20px;"): span 〒
+        td(style="width:130px;"): span= conZip
+        td(style="width:32px;"): span TEL
+        td(style="width:200px;"): span= conTel
+        td(style="text-align:right;")
+          span(style="font-size:11px;") (現住所以外に連絡を希望する場合のみ記入)
+  tr.btmPeriphery
+    td.leader
+    td.follow(colspan="3")
+      span(style="font-size:22px;padding-bottom:8px;")= contact
