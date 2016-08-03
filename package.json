@@ -6,6 +6,10 @@
   "scripts": {
     "test": "mocha --require intelli-espower-loader"
   },
+   "keywords": [
+     "resume",
+     "pdf"
+   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tadashiy1012/resumaker.git"
