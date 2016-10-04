@@ -10,8 +10,5 @@
 const maker = require('resumaker');
 maker.make().then((result) => {
   console.log(result); // html data
-  return maker.convert(result);
-}).then((result) => {
-  console.log(result); // output pdf file path
 });
 ```

@@ -1,6 +1,6 @@
 {
   "name": "resumaker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Auto create a resume",
   "main": "index.js",
   "scripts": {
@@ -29,8 +29,6 @@
     "test": "test/"
   },
   "dependencies": {
-    "electron-pdf": "^0.10.1",
-    "npm-run": "^4.1.0",
     "pug": "^2.0.0-beta4"
   }
 }
